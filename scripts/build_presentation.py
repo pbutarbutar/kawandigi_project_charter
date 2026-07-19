@@ -157,7 +157,7 @@ footer(s, 2)
 s = base_slide("Business Case", "02 · Why & What")
 card(s, "Pernyataan Masalah", "Saat ini Brawijaya Hospital memiliki 0 koperasi karyawan, 0 sistem terpusat untuk pengelolaan anggota dan transaksi, serta 0 kanal marketplace internal. Dampaknya, layanan kesejahteraan dan aktivitas keuangan anggota belum terkelola secara transparan atau terukur, sementara potensi pendapatan unit usaha internal belum dimanfaatkan.", .6, 1.45, 5.95, 3.95, PINK, 17, 14)
 card(s, "Deskripsi Proyek (WHAT)", "Membangun ekosistem web mobile yang menyatukan keanggotaan, Digital Saving Account, pembayaran, laporan keuangan, dan Lapak Employee. Delivery dilakukan lintas unit oleh HR, Finance & Accounting, IT, Legal/Compliance, calon pengurus koperasi, perwakilan karyawan, dan tim KawanDigi.", 6.8, 1.45, 5.9, 1.7, PURPLE, 17, 12)
-card(s, "Objektif SMART", ["Menyelesaikan MVP sesuai scope", "Menyiapkan pilot di Brawijaya Antasari", "Meluluskan seluruh proses kritikal melalui UAT", "Menyediakan laporan anggota yang dapat ditelusuri"], 6.8, 3.35, 5.9, 2.05, NAVY2, 17, 12)
+card(s, "Objektif SMART", "Dalam 4 bulan sejak Project Charter disetujui, menyelesaikan 100% fitur MVP sesuai scope, meluluskan 100% skenario UAT kritikal, dan memastikan minimal 90% pengguna pilot Brawijaya Hospital Antasari berhasil login serta mengakses dashboard.", 6.8, 3.35, 5.9, 2.05, NAVY2, 17, 13)
 footer(s, 3)
 
 # 4 — Deliverables & success
