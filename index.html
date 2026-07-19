@@ -352,6 +352,41 @@
     .step strong { display: block; color: var(--navy); }
     .step span { color: var(--muted); font-size: 13px; }
 
+    .milestone-detail {
+      margin-top: 28px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+    }
+
+    .milestone-detail h4 {
+      margin: 0 0 12px;
+      color: var(--navy);
+      font-size: 16px;
+    }
+
+    .mvp-check {
+      display: inline-grid;
+      width: 24px;
+      height: 24px;
+      place-items: center;
+      border: 2px solid #CFC3DD;
+      border-radius: 7px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .mvp-check.checked {
+      border-color: var(--purple);
+      background: linear-gradient(135deg, var(--pink), var(--purple));
+    }
+
+    .milestone-note {
+      margin-top: 10px !important;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
@@ -926,6 +961,22 @@
           <div class="step"><div class="dot">3</div><div><strong>Development</strong><span>Pembangunan MVP secara sprint</span></div></div>
           <div class="step"><div class="dot">4</div><div><strong>UAT</strong><span>Validasi kebutuhan bisnis</span></div></div>
           <div class="step"><div class="dot">5</div><div><strong>Pilot Go-Live</strong><span>Implementasi terbatas dan evaluasi</span></div></div>
+        </div>
+        <div class="milestone-detail">
+          <h4>Detail Target Milestone</h4>
+          <table aria-label="Detail target milestone proyek">
+            <thead>
+              <tr><th>#</th><th>Milestone</th><th>Tanggal Target</th><th>MVP?</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>Charter Approval</td><td>H+0 — tanggal persetujuan</td><td><span class="mvp-check" role="img" aria-label="Bukan bagian delivery MVP"></span></td></tr>
+              <tr><td>2</td><td>Design</td><td>H+21 — minggu ke-3</td><td><span class="mvp-check checked" role="img" aria-label="Bagian MVP">✓</span></td></tr>
+              <tr><td>3</td><td>Development</td><td>H+77 — minggu ke-11</td><td><span class="mvp-check checked" role="img" aria-label="Bagian MVP">✓</span></td></tr>
+              <tr><td>4</td><td>User Acceptance Test (UAT)</td><td>H+98 — minggu ke-14</td><td><span class="mvp-check checked" role="img" aria-label="Bagian MVP">✓</span></td></tr>
+              <tr><td>5</td><td>Pilot Go-Live</td><td>H+120 — akhir bulan ke-4</td><td><span class="mvp-check checked" role="img" aria-label="Bagian MVP">✓</span></td></tr>
+            </tbody>
+          </table>
+          <p class="milestone-note">H dihitung sejak tanggal Project Charter disetujui. Tanggal kalender final ditetapkan pada saat sign-off sponsor.</p>
         </div>
       </div>
 

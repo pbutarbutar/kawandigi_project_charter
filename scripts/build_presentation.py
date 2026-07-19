@@ -186,7 +186,7 @@ footer(s, 5)
 
 # 6 — Roadmap
 s = base_slide("Delivery Roadmap", "05 · When & How")
-steps = [("1", "Charter Approval", "Tujuan, scope, sponsor"), ("2", "Design", "User flow & UI/UX"), ("3", "Development", "MVP berbasis sprint"), ("4", "UAT", "Validasi bisnis"), ("5", "Pilot Go-Live", "Implementasi & evaluasi")]
+steps = [("1", "Charter Approval", "H+0 · Non-MVP"), ("2", "Design", "H+21 · MVP ✓"), ("3", "Development", "H+77 · MVP ✓"), ("4", "UAT", "H+98 · MVP ✓"), ("5", "Pilot Go-Live", "H+120 · MVP ✓")]
 rect(s, 1.05, 2.16, 11.15, .06, LINE, False, LINE)
 for i, (n, title, desc) in enumerate(steps):
     x = .72 + i*2.48
