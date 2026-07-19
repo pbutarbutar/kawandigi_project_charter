@@ -200,7 +200,7 @@ footer(s, 6)
 
 # 7 — Governance and risks
 s = base_slide("Governance & Key Risks", "06 · Control")
-risks = [("Perubahan requirement", "Timeline & biaya", "TINGGI", RED), ("Adopsi pengguna rendah", "Manfaat pilot", "SEDANG", ORANGE), ("Keterlambatan integrasi", "Kesiapan transaksi", "SEDANG", ORANGE), ("Keamanan data", "Trust & compliance", "TINGGI", RED)]
+risks = [("Perubahan requirement", "PIC: PM & Product Owner", "TINGGI", RED), ("Adopsi pengguna rendah", "PIC: HR & Pengurus", "SEDANG", ORANGE), ("Keterlambatan integrasi", "PIC: IT & Tech Lead", "SEDANG", ORANGE), ("Keamanan data", "PIC: IT Security & Legal", "TINGGI", RED)]
 for i, (risk, impact, level, color) in enumerate(risks):
     y = 1.45 + i*1.05
     rect(s, .65, y, 7.2, .82, WHITE, True, LINE)
@@ -209,7 +209,7 @@ for i, (risk, impact, level, color) in enumerate(risks):
     rect(s, 6.2, y+.16, 1.35, .38, color, True, color)
     textbox(s, level, 6.27, y+.27, 1.2, .14, 8, WHITE, True, PP_ALIGN.CENTER)
 card(s, "Mitigasi Inti", ["Baseline scope & change control", "Onboarding dan feedback pengguna", "Mock service & integrasi bertahap", "Secure design, audit log, enkripsi"], 8.15, 1.45, 4.55, 4.0, PURPLE, 17, 13)
-textbox(s, "Sponsor → keputusan strategis   |   PM → koordinasi & kontrol   |   Owner → prioritas requirement", .75, 6.05, 11.9, .42, 12, NAVY, True, PP_ALIGN.CENTER)
+textbox(s, "Sponsor → sumber daya & keputusan akhir   |   Mentor → bimbingan & arahan   |   Ketua/PM → memimpin & ikut mengerjakan   |   Tim → delivery harian", .75, 6.05, 11.9, .42, 11, NAVY, True, PP_ALIGN.CENTER)
 footer(s, 7)
 
 # 8 — Business value
@@ -242,7 +242,7 @@ card(s,"Stakeholder",names,8.45,1.45,4.25,4.95,PURPLE,16,11)
 footer(s, 9)
 
 # 10 — Android overview
-s = base_slide("Android KawanDigi", "09 · Product Experience", True)
+s = base_slide("Web Mobile KawanDigi", "09 · Product Experience", True)
 textbox(s,"Satu aplikasi untuk layanan anggota",.65,1.3,5.2,.45,19,WHITE,True)
 textbox(s,"Akses saldo, setoran, penarikan, kewajiban, transaksi, dan laporan keuangan dalam pengalaman mobile yang konsisten.",.65,1.9,4.5,1.1,14,RGBColor(220,210,235))
 add_image_contain(s,ANDROID/"apps_main.png",5.65,1.25,2.3,5.75,WHITE)
@@ -253,7 +253,7 @@ for i,t in enumerate(["Secure login","Digital Saving Account","Laporan anggota"]
 textbox(s,"10",12.15,7.12,.6,.2,9,RGBColor(190,180,210),True,PP_ALIGN.RIGHT)
 
 # 11 — Android flows
-s = base_slide("Key Member Flows", "10 · Android Screens")
+s = base_slide("Key Member Flows", "10 · Web Mobile Screens")
 screens=[("Setor", "apps_setor.png"),("Tarik", "apps_tarik.png"),("Pembayaran", "apps_pembayaran.png"),("Laporan", "apps_laporang_keuangan.png")]
 for i,(label,file) in enumerate(screens):
     x=.58+i*3.17

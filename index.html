@@ -231,6 +231,7 @@
 
     .grid-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
     .grid-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .grid-4 { grid-template-columns: repeat(4, minmax(0,1fr)); }
 
     .card {
       background: var(--card);
@@ -465,7 +466,7 @@
 
     @media (max-width: 900px) {
       .hero { padding: 34px 24px; border-radius: 24px; }
-      .grid-2, .grid-3, .metric-wrap, .signoff { grid-template-columns: 1fr; }
+      .grid-2, .grid-3, .grid-4, .metric-wrap, .signoff { grid-template-columns: 1fr; }
       .timeline { grid-template-columns: 1fr; }
       .timeline::before { display:none; }
       .step { text-align: left; display:grid; grid-template-columns: 52px 1fr; gap:12px; align-items:center; }
@@ -872,7 +873,7 @@
       <a href="#project-governance">Project Governance</a>
       <a href="#business-value">Business Value</a>
       <a href="#stakeholder-analysis">Stakeholder Analysis</a>
-      <a href="#android-product-view">Android App View</a>
+      <a href="#android-product-view">Web Mobile App View</a>
       <a href="#lapak-employee-view">Lapak Employee</a>
     </nav>
 
@@ -999,20 +1000,21 @@
       <div class="card">
         <h3>Risiko Utama</h3>
         <table>
-          <thead><tr><th>Risiko</th><th>Dampak</th><th>Level</th><th>Mitigasi</th></tr></thead>
+          <thead><tr><th>Risiko</th><th>Dampak</th><th>Level</th><th>Mitigasi</th><th>PIC</th></tr></thead>
           <tbody>
-            <tr><td>Perubahan requirement di tengah proyek</td><td>Perubahan timeline dan biaya</td><td><span class="badge high">Tinggi</span></td><td>Baseline scope dan change control</td></tr>
-            <tr><td>Adopsi pengguna rendah</td><td>Pilot tidak mencapai manfaat</td><td><span class="badge medium">Sedang</span></td><td>Sosialisasi, onboarding, dan feedback pengguna</td></tr>
-            <tr><td>Keterlambatan integrasi</td><td>Fitur transaksi tidak siap</td><td><span class="badge medium">Sedang</span></td><td>Gunakan mock service dan integrasi bertahap</td></tr>
-            <tr><td>Isu keamanan data</td><td>Risiko kepercayaan dan kepatuhan</td><td><span class="badge high">Tinggi</span></td><td>Secure design, audit log, enkripsi, dan kontrol akses</td></tr>
+            <tr><td>Perubahan requirement di tengah proyek</td><td>Perubahan timeline dan biaya</td><td><span class="badge high">Tinggi</span></td><td>Baseline scope dan change control</td><td>Project Manager &amp; Product Owner</td></tr>
+            <tr><td>Adopsi pengguna rendah</td><td>Pilot tidak mencapai manfaat</td><td><span class="badge medium">Sedang</span></td><td>Sosialisasi, onboarding, dan feedback pengguna</td><td>HR &amp; Calon Pengurus Koperasi</td></tr>
+            <tr><td>Keterlambatan integrasi</td><td>Fitur transaksi tidak siap</td><td><span class="badge medium">Sedang</span></td><td>Gunakan mock service dan integrasi bertahap</td><td>IT &amp; Technical Lead</td></tr>
+            <tr><td>Isu keamanan data</td><td>Risiko kepercayaan dan kepatuhan</td><td><span class="badge high">Tinggi</span></td><td>Secure design, audit log, enkripsi, dan kontrol akses</td><td>IT Security &amp; Legal/Compliance</td></tr>
           </tbody>
         </table>
       </div>
 
-      <div class="grid grid-3" style="margin-top:18px">
-        <article class="card"><h3>Team</h3><ul class="list"><li>Project Sponsor</li><li>Project Manager</li><li>Business/Product Owner</li><li>Frontend Engineer</li><li>Backend Engineer</li><li>QA/UAT Coordinator</li></ul></article>
-        <article class="card"><h3>Pemangku Kepentingan</h3><ul class="list"><li>Direksi / Manajemen RS</li><li>HRD</li><li>Keuangan</li><li>IT</li><li>Calon pengurus koperasi</li><li>Perwakilan karyawan</li></ul></article>
-        <article class="card"><h3>Peran & Akuntabilitas</h3><ul class="list"><li>Sponsor: arahan dan keputusan strategis</li><li>PM: koordinasi dan kontrol proyek</li><li>Owner: prioritas requirement</li><li>Tim teknis: delivery solusi</li><li>UAT: validasi kesesuaian bisnis</li></ul></article>
+      <div class="grid grid-4" style="margin-top:18px">
+        <article class="card"><h3>Pemilik Sumber Daya &amp; Keputusan Akhir</h3><p>Project Sponsor / Manajemen Brawijaya Hospital menyediakan sumber daya, menyetujui scope, dan mengambil keputusan akhir proyek.</p></article>
+        <article class="card"><h3>Mentor</h3><p><strong>Salsabila Satriavi — HOD Finance</strong><br>Memberikan bimbingan, arahan, dan masukan strategis selama pelaksanaan proyek.</p></article>
+        <article class="card"><h3>Ketua / Manajer Proyek</h3><p><strong>May Dina — Pharmacy</strong><br>Memimpin koordinasi proyek, mengendalikan pelaksanaan, dan ikut mengerjakan deliverables.</p></article>
+        <article class="card"><h3>Tim Proyek</h3><p><strong>Sari Wulandari — HR<br>Andrian — IT<br>Endry — Gizi</strong><br>Mengerjakan aktivitas proyek sehari-hari sesuai pembagian tugas.</p></article>
       </div>
     </section>
 
@@ -1153,7 +1155,7 @@
 
     <section id="android-product-view">
       <div class="section-head">
-        <div><h2>Product View — Android KawanDigi</h2></div>
+        <div><h2>Product View — Web Mobile KawanDigi</h2></div>
         <p>Visualisasi pengalaman anggota pada aplikasi KawanDigi, mulai dari autentikasi, dashboard, transaksi simpanan, hingga laporan keuangan.</p>
       </div>
 
