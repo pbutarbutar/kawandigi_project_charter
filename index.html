@@ -128,6 +128,46 @@
       font-size: 14px;
     }
 
+    .team-info {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.1fr 1fr 2.2fr;
+      gap: 12px;
+      margin-top: 18px;
+      padding: 16px;
+      border-radius: 20px;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.18);
+      backdrop-filter: blur(8px);
+    }
+
+    .team-info-item {
+      min-width: 0;
+      padding: 2px 8px;
+    }
+
+    .team-info-item + .team-info-item {
+      border-left: 1px solid rgba(255,255,255,.2);
+    }
+
+    .team-info-label {
+      display: block;
+      margin-bottom: 3px;
+      color: rgba(255,255,255,.66);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .7px;
+      text-transform: uppercase;
+    }
+
+    .team-info-value {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
     .nav {
       position: sticky;
       top: 12px;
@@ -691,6 +731,13 @@
       .hero p { font-size: 16px; }
       .hero-meta { gap: 8px; margin-top: 24px; }
       .meta-pill { width: 100%; padding: 9px 12px; }
+      .team-info { grid-template-columns: 1fr; padding: 13px; }
+      .team-info-item { padding: 4px 5px; }
+      .team-info-item + .team-info-item {
+        padding-top: 11px;
+        border-left: 0;
+        border-top: 1px solid rgba(255,255,255,.18);
+      }
 
       .nav {
         top: 6px;
@@ -762,6 +809,20 @@
         <div class="meta-pill">Lokasi Pilot: Brawijaya Hospital Antasari</div>
         <div class="meta-pill">Tahap: Inisiasi & MVP</div>
         <div class="meta-pill">Platform: Web Mobile</div>
+      </div>
+      <div class="team-info" aria-label="Informasi kelompok KawanDigi Brawijaya">
+        <div class="team-info-item">
+          <span class="team-info-label">Nama Kelompok</span>
+          <div class="team-info-value">KawanDigi Brawijaya</div>
+        </div>
+        <div class="team-info-item">
+          <span class="team-info-label">Ketua</span>
+          <div class="team-info-value">May Dina — Pharmacy</div>
+        </div>
+        <div class="team-info-item">
+          <span class="team-info-label">Anggota</span>
+          <div class="team-info-value">Sari Wulandari — HR · Andrian — IT · Endry — Gizi</div>
+        </div>
       </div>
     </header>
 
