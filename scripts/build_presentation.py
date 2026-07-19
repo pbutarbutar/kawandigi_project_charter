@@ -209,7 +209,7 @@ for i, (risk, impact, level, color) in enumerate(risks):
     rect(s, 6.2, y+.16, 1.35, .38, color, True, color)
     textbox(s, level, 6.27, y+.27, 1.2, .14, 8, WHITE, True, PP_ALIGN.CENTER)
 card(s, "Mitigasi Inti", ["Baseline scope & change control", "Onboarding dan feedback pengguna", "Mock service & integrasi bertahap", "Secure design, audit log, enkripsi"], 8.15, 1.45, 4.55, 4.0, PURPLE, 17, 13)
-textbox(s, "Sponsor → sumber daya & keputusan akhir   |   Mentor → bimbingan & arahan   |   Ketua/PM → memimpin & ikut mengerjakan   |   Tim → delivery harian", .75, 6.05, 11.9, .42, 11, NAVY, True, PP_ALIGN.CENTER)
+textbox(s, "dr. Mus Aida, MARS, MH → sumber daya & keputusan akhir   |   Mentor → bimbingan & arahan   |   Ketua/PM → memimpin & ikut mengerjakan   |   Tim → delivery harian", .75, 6.05, 11.9, .42, 10, NAVY, True, PP_ALIGN.CENTER)
 footer(s, 7)
 
 # 8 — Business value
@@ -218,9 +218,10 @@ values = [("Transparansi", "Informasi dan transaksi anggota dapat ditelusuri"), 
 for i,(title,desc) in enumerate(values):
     x=.65+(i%2)*3.15; y=1.45+(i//2)*1.55
     card(s,title,desc,x,y,2.85,1.25,[PINK,PURPLE,NAVY2,GREEN][i],15,11)
-card(s, "Biaya", "Pengembangan MVP, infrastruktur, desain, pengujian, dan sosialisasi.", 7.15, 1.45, 5.55, 1.25, RED)
-card(s, "Manfaat Operasional & Finansial", "Mengurangi proses manual serta membuka potensi pertumbuhan simpanan dan transaksi Lapak Employee.", 7.15, 2.95, 5.55, 1.5, GREEN)
-card(s, "Cadence", ["Weekly project meeting", "Biweekly sprint review", "Monthly steering committee", "UAT checkpoint sebelum go-live"], 7.15, 4.7, 5.55, 1.35, PURPLE, 15, 10)
+card(s, "Investasi Awal · Rp 180–300 juta", "Design & development MVP, setup infrastruktur, security baseline, UAT, pelatihan, dan persiapan pilot.", 7.15, 1.45, 5.55, 1.25, RED, 14, 10)
+card(s, "Operasi · Rp 12–25 juta/bulan", "Cloud, database & backup, WhatsApp/OTP, monitoring, maintenance, support, dan minor improvement.", 7.15, 2.95, 5.55, 1.35, ORANGE, 14, 10)
+card(s, "Manfaat · Efisiensi 60–80%", "100% transaksi pilot digital; potensi GMV Lapak Employee Rp 30–75 juta/bulan. Estimasi indikatif, divalidasi melalui quotation dan pilot.", 7.15, 4.55, 5.55, 1.4, GREEN, 14, 10)
+card(s, "Ritme Proyek (Cadence)", ["Check-in pertama: H+7", "Frekuensi: mingguan", "Pemimpin: May Dina — Ketua/PM", "Review: H+21, H+77, H+98, H+120"], .65, 4.7, 5.95, 1.35, PURPLE, 14, 9)
 footer(s, 8)
 
 # 9 — Stakeholder map
@@ -288,11 +289,11 @@ rect(s,9.8,-.8,4.4,4.4,NAVY2,True,NAVY2); rect(s,-1.0,5.6,4.0,2.8,PINK,True,PINK
 textbox(s,"NEXT STEP",.75,.7,2.0,.25,11,PINK2,True)
 textbox(s,"Alignment, Approval\n& Pilot Readiness",.75,1.2,8.0,1.25,31,WHITE,True)
 textbox(s,"Komitmen bersama memastikan scope terkendali, kebutuhan bisnis tervalidasi, dan pilot memberikan evidence untuk keputusan berikutnya.",.75,2.85,7.25,.85,15,RGBColor(220,210,235))
-for i,(role,action) in enumerate([("Project Sponsor","Strategic approval"),("Project Manager","Delivery control"),("Business Owner","Requirement priority")]):
-    x=.75+i*4.05
-    rect(s,x,4.45,3.65,1.2,RGBColor(69,35,116),True,RGBColor(102,68,150))
-    textbox(s,role,x+.2,4.7,3.25,.25,14,WHITE,True,PP_ALIGN.CENTER)
-    textbox(s,action,x+.2,5.13,3.25,.2,10,RGBColor(205,195,222),False,PP_ALIGN.CENTER)
+for i,(role,action) in enumerate([("SPONSOR","Direktur Rumah Sakit"),("MENTOR","HOD Finance"),("KETUA PROYEK","Manajer Proyek"),("PERWAKILAN TIM","Anggota Inti")]):
+    x=.55+i*3.18
+    rect(s,x,4.45,2.9,1.2,RGBColor(69,35,116),True,RGBColor(102,68,150))
+    textbox(s,role,x+.15,4.7,2.6,.25,12,WHITE,True,PP_ALIGN.CENTER)
+    textbox(s,action,x+.15,5.13,2.6,.2,9,RGBColor(205,195,222),False,PP_ALIGN.CENTER)
 textbox(s,"KawanDigi · Bersama Tumbuh, Bersama Sejahtera",.75,6.78,7.0,.22,10,WHITE,True)
 
 prs.core_properties.title = "Project Charter — Inisiasi Koperasi Digital KawanDigi"

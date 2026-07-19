@@ -442,7 +442,7 @@
 
     .signoff {
       display: grid;
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(4,1fr);
       gap: 18px;
     }
 
@@ -1011,7 +1011,7 @@
       </div>
 
       <div class="grid grid-4" style="margin-top:18px">
-        <article class="card"><h3>Pemilik Sumber Daya &amp; Keputusan Akhir</h3><p>Project Sponsor / Manajemen Brawijaya Hospital menyediakan sumber daya, menyetujui scope, dan mengambil keputusan akhir proyek.</p></article>
+        <article class="card"><h3>Pemilik Sumber Daya &amp; Keputusan Akhir</h3><p><strong>dr. Mus Aida, MARS, MH</strong><br>Menyediakan sumber daya, menyetujui scope, dan mengambil keputusan akhir proyek.</p></article>
         <article class="card"><h3>Mentor</h3><p><strong>Salsabila Satriavi — HOD Finance</strong><br>Memberikan bimbingan, arahan, dan masukan strategis selama pelaksanaan proyek.</p></article>
         <article class="card"><h3>Ketua / Manajer Proyek</h3><p><strong>May Dina — Pharmacy</strong><br>Memimpin koordinasi proyek, mengendalikan pelaksanaan, dan ikut mengerjakan deliverables.</p></article>
         <article class="card"><h3>Tim Proyek</h3><p><strong>Sari Wulandari — HR<br>Andrian — IT<br>Endry — Gizi</strong><br>Mengerjakan aktivitas proyek sehari-hari sesuai pembagian tugas.</p></article>
@@ -1039,26 +1039,30 @@
         <article class="card">
           <h3>Biaya dan Manfaat</h3>
           <table>
-            <thead><tr><th>Komponen</th><th>Penjelasan</th></tr></thead>
+            <thead><tr><th>Komponen</th><th>Estimasi</th><th>Penjelasan</th></tr></thead>
             <tbody>
-              <tr><td>Biaya</td><td>Pengembangan MVP, infrastruktur, desain, pengujian, dan sosialisasi.</td></tr>
-              <tr><td>Manfaat Operasional</td><td>Pengurangan proses manual dan akses informasi lebih cepat.</td></tr>
-              <tr><td>Manfaat Finansial</td><td>Potensi pertumbuhan simpanan dan transaksi Lapak Employee.</td></tr>
-              <tr><td>Manfaat Strategis</td><td>Fondasi ekosistem digital koperasi jangka panjang.</td></tr>
+              <tr><td><strong>Investasi Awal</strong></td><td>Rp 180–300 juta</td><td>Design dan pengembangan MVP, setup infrastruktur, security baseline, UAT, pelatihan, serta persiapan pilot.</td></tr>
+              <tr><td><strong>Biaya Operasi Rutin</strong></td><td>Rp 12–25 juta/bulan</td><td>Cloud hosting, database dan backup, WhatsApp/OTP, monitoring, maintenance, support pengguna, serta perbaikan minor.</td></tr>
+              <tr><td><strong>Manfaat Kuantitatif</strong></td><td>Efisiensi 60–80%</td><td>Pengurangan waktu administrasi manual; 100% transaksi pilot tercatat digital; potensi nilai transaksi Lapak Employee Rp 30–75 juta/bulan dengan margin layanan sekitar 3–8%, bergantung pada adopsi.</td></tr>
+              <tr><td><strong>Manfaat Kualitatif</strong></td><td>Strategis</td><td>Transparansi dan audit trail lebih baik, peningkatan kepercayaan anggota, akses layanan lebih cepat, dukungan kesejahteraan karyawan, dan fondasi ekosistem koperasi digital.</td></tr>
             </tbody>
           </table>
+          <p style="margin-top:10px;font-size:12px"><em>Estimasi indikatif untuk fase MVP dan pilot satu lokasi; nilai final perlu divalidasi melalui vendor quotation, volume pengguna, dan hasil pilot.</em></p>
         </article>
       </div>
 
       <div class="grid grid-2" style="margin-top:18px">
         <article class="card">
-          <h3>Time Proyek (Cadence)</h3>
-          <ul class="list">
-            <li>Weekly project meeting.</li>
-            <li>Biweekly sprint review dan demo.</li>
-            <li>Monthly steering committee.</li>
-            <li>UAT checkpoint sebelum pilot go-live.</li>
-          </ul>
+          <h3>Ritme Proyek (Cadence)</h3>
+          <table>
+            <tbody>
+              <tr><th>Check-in Pertama</th><td><strong>H+7</strong> — tujuh hari setelah Project Charter disetujui</td></tr>
+              <tr><th>Frekuensi</th><td><strong>Mingguan</strong>, setiap 30–45 menit; sprint review dan demo dilakukan setiap dua minggu</td></tr>
+              <tr><th>Pemimpin Check-in</th><td><strong>May Dina — Ketua/Manajer Proyek</strong></td></tr>
+              <tr><th>Titik Review Milestone</th><td>H+21 Design · H+77 Development · H+98 UAT · H+120 Pilot Go-Live</td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top:10px;font-size:12px"><em>H dihitung sejak tanggal persetujuan Project Charter; tanggal kalender ditetapkan saat sign-off.</em></p>
         </article>
 
         <article class="card" id="stakeholder">
@@ -1079,9 +1083,10 @@
       <div class="card" style="margin-top:18px">
         <h3>Sign-off (Komitmen)</h3>
         <div class="signoff">
-          <div class="signature"><strong>Project Sponsor</strong><p>Nama:<br>Jabatan:<br>Tanggal:<br>Tanda tangan:</p></div>
-          <div class="signature"><strong>Project Manager</strong><p>Nama:<br>Jabatan:<br>Tanggal:<br>Tanda tangan:</p></div>
-          <div class="signature"><strong>Business / Product Owner</strong><p>Nama:<br>Jabatan:<br>Tanggal:<br>Tanda tangan:</p></div>
+          <div class="signature"><strong>SPONSOR</strong><p>Peran: Direktur Rumah Sakit<br>Nama:<br>Tanggal:<br>Tanda tangan:</p></div>
+          <div class="signature"><strong>MENTOR</strong><p>Peran: HOD Finance<br>Nama:<br>Tanggal:<br>Tanda tangan:</p></div>
+          <div class="signature"><strong>KETUA PROYEK</strong><p>Peran: Manajer Proyek<br>Nama:<br>Tanggal:<br>Tanda tangan:</p></div>
+          <div class="signature"><strong>PERWAKILAN TIM</strong><p>Peran: Anggota Inti<br>Nama:<br>Tanggal:<br>Tanda tangan:</p></div>
         </div>
       </div>
     </section>
