@@ -4,7 +4,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
 export const metadata: Metadata = {
-  title: "Project Charter - Koperasi Digital KawanDigi Brawijaya Hospital",
+  title: "Project Charter - Inisiasi Koperasi KawanDigi - Brawijaya Hospital",
   description:
     "Project Charter inisiasi Koperasi Digital KawanDigi di Brawijaya Hospital Antasari.",
 };

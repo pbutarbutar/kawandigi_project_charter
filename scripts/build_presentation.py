@@ -136,7 +136,7 @@ rect(s, .65, .55, .58, .58, PINK, True, PINK)
 textbox(s, "KD", .65, .67, .58, .25, 14, WHITE, True, PP_ALIGN.CENTER)
 textbox(s, "KAWANDIGI · KOPERASI KARYAWAN DIGITAL", 1.4, .68, 6.2, .25, 11, WHITE, True)
 textbox(s, "PROJECT CHARTER", .68, 1.65, 4.3, .3, 12, PINK2, True)
-textbox(s, "Inisiasi Koperasi\nDigital KawanDigi", .68, 2.05, 8.2, 1.7, 34, WHITE, True)
+textbox(s, "Inisiasi Koperasi KawanDigi\n- Brawijaya Hospital", .68, 2.05, 8.2, 1.7, 32, WHITE, True)
 textbox(s, "Fondasi layanan keuangan anggota dan unit usaha digital\nuntuk Brawijaya Hospital Antasari", .7, 4.05, 7.1, .8, 17, RGBColor(225,216,239))
 for i, label in enumerate(["Pilot: Brawijaya Antasari", "Tahap: Inisiasi & MVP", "Platform: Web Mobile"]):
     rect(s, .7 + i*2.55, 5.35, 2.35, .48, RGBColor(75, 40, 125), True, RGBColor(105,70,150))
@@ -296,7 +296,7 @@ for i,(role,action) in enumerate([("SPONSOR","Direktur Rumah Sakit"),("MENTOR","
     textbox(s,action,x+.15,5.13,2.6,.2,9,RGBColor(205,195,222),False,PP_ALIGN.CENTER)
 textbox(s,"KawanDigi · Bersama Tumbuh, Bersama Sejahtera",.75,6.78,7.0,.22,10,WHITE,True)
 
-prs.core_properties.title = "Project Charter — Inisiasi Koperasi Digital KawanDigi"
+prs.core_properties.title = "Project Charter — Inisiasi Koperasi KawanDigi - Brawijaya Hospital"
 prs.core_properties.subject = "KawanDigi Project Charter and Product View"
 prs.core_properties.author = "KawanDigi"
 prs.core_properties.keywords = "KawanDigi, Project Charter, Koperasi Digital, Lapak Employee"
