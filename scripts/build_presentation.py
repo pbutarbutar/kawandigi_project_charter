@@ -155,8 +155,8 @@ footer(s, 2)
 
 # 3 — Business case
 s = base_slide("Business Case", "02 · Why & What")
-card(s, "Pernyataan Masalah", ["Belum ada sarana koperasi untuk kesejahteraan karyawan", "Keanggotaan, simpanan, transaksi, dan laporan belum digital", "Belum ada marketplace internal sebagai unit usaha koperasi"], .6, 1.45, 5.95, 3.95, PINK, 17, 13)
-card(s, "Solusi yang Diusulkan", "Membangun platform KawanDigi sebagai pusat layanan anggota dan Lapak Employee sebagai unit usaha digital pertama.", 6.8, 1.45, 5.9, 1.7, PURPLE, 17, 14)
+card(s, "Pernyataan Masalah", "Saat ini Brawijaya Hospital memiliki 0 koperasi karyawan, 0 sistem terpusat untuk pengelolaan anggota dan transaksi, serta 0 kanal marketplace internal. Dampaknya, layanan kesejahteraan dan aktivitas keuangan anggota belum terkelola secara transparan atau terukur, sementara potensi pendapatan unit usaha internal belum dimanfaatkan.", .6, 1.45, 5.95, 3.95, PINK, 17, 14)
+card(s, "Deskripsi Proyek (WHAT)", "Membangun ekosistem web mobile yang menyatukan keanggotaan, Digital Saving Account, pembayaran, laporan keuangan, dan Lapak Employee. Delivery dilakukan lintas unit oleh HR, Finance & Accounting, IT, Legal/Compliance, calon pengurus koperasi, perwakilan karyawan, dan tim KawanDigi.", 6.8, 1.45, 5.9, 1.7, PURPLE, 17, 12)
 card(s, "Objektif SMART", ["Menyelesaikan MVP sesuai scope", "Menyiapkan pilot di Brawijaya Antasari", "Meluluskan seluruh proses kritikal melalui UAT", "Menyediakan laporan anggota yang dapat ditelusuri"], 6.8, 3.35, 5.9, 2.05, NAVY2, 17, 12)
 footer(s, 3)
 
