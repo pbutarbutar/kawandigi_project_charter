@@ -6,7 +6,7 @@ import { join } from "node:path";
 export const metadata: Metadata = {
   title: "Project Charter - Koperasi Digital KawanDigi",
   description:
-    "Project Charter inisiasi Koperasi Digital KawanDigi di Brawijaya Hospital Cipete.",
+    "Project Charter inisiasi Koperasi Digital KawanDigi di Brawijaya Hospital Antasari.",
 };
 
 function getPageStyles() {
