@@ -225,7 +225,7 @@ card(s, "Ritme Proyek (Cadence)", ["Check-in pertama: H+7", "Frekuensi: mingguan
 footer(s, 8)
 
 # 9 — Stakeholder map
-s = base_slide("Stakeholder Analysis", "08 · Engagement")
+s = base_slide("Peta Stakeholder: Pengaruh × Dukungan", "08 · Engagement")
 mx,my,mw,mh=.65,1.45,7.5,4.95
 rect(s,mx,my,mw,mh,WHITE,True,LINE)
 rect(s,mx+mw/2,my,.025,mh,LINE,False,LINE); rect(s,mx,my+mh/2,mw,.025,LINE,False,LINE)
@@ -243,7 +243,7 @@ card(s,"Stakeholder",names,8.45,1.45,4.25,4.95,PURPLE,16,11)
 footer(s, 9)
 
 # 10 — Android overview
-s = base_slide("Web Mobile KawanDigi", "09 · Product Experience", True)
+s = base_slide("Web Mobile KawanDigi", "LAMPIRAN · Product Experience", True)
 textbox(s,"Satu aplikasi untuk layanan anggota",.65,1.3,5.2,.45,19,WHITE,True)
 textbox(s,"Akses saldo, setoran, penarikan, kewajiban, transaksi, dan laporan keuangan dalam pengalaman mobile yang konsisten.",.65,1.9,4.5,1.1,14,RGBColor(220,210,235))
 add_image_contain(s,ANDROID/"apps_main.png",5.65,1.25,2.3,5.75,WHITE)
@@ -254,7 +254,7 @@ for i,t in enumerate(["Secure login","Digital Saving Account","Laporan anggota"]
 textbox(s,"10",12.15,7.12,.6,.2,9,RGBColor(190,180,210),True,PP_ALIGN.RIGHT)
 
 # 11 — Android flows
-s = base_slide("Key Member Flows", "10 · Web Mobile Screens")
+s = base_slide("Key Member Flows", "LAMPIRAN · Web Mobile Screens")
 screens=[("Setor", "apps_setor.png"),("Tarik", "apps_tarik.png"),("Pembayaran", "apps_pembayaran.png"),("Laporan", "apps_laporang_keuangan.png")]
 for i,(label,file) in enumerate(screens):
     x=.58+i*3.17
@@ -263,7 +263,7 @@ for i,(label,file) in enumerate(screens):
 footer(s, 11)
 
 # 12 — Lapak employee overview
-s = base_slide("LapakEmployee.com", "11 · Digital Business Unit")
+s = base_slide("LapakEmployee.com", "LAMPIRAN · Digital Business Unit")
 textbox(s,"Marketplace internal sebagai unit usaha pertama KawanDigi",.65,1.35,6.0,.5,18,NAVY,True)
 textbox(s,"Menghubungkan karyawan dengan seller internal melalui katalog produk, checkout, pembayaran, dan komunikasi WhatsApp.",.65,1.95,5.3,.9,13,MUTED)
 add_image_contain(s,WEB/"lapakemployee.com.png",6.25,1.3,6.45,2.55,WHITE)
@@ -275,7 +275,7 @@ for i,t in enumerate(["Seller discovery","Product catalog","Checkout & payment",
 footer(s, 12)
 
 # 13 — Seller and whatsapp
-s = base_slide("Seller Operations & WhatsApp", "12 · Commerce Enablement")
+s = base_slide("Seller Operations & WhatsApp", "LAMPIRAN · Commerce Enablement")
 add_image_contain(s,WEB/"lapakemployee-login-seller.png",.65,1.35,7.55,4.85,WHITE)
 add_image_contain(s,WEB/"lapak-employee-whatsapp-order.png",8.45,1.35,4.25,4.85,WHITE)
 textbox(s,"Seller Portal",.65,6.42,7.55,.28,12,NAVY,True,PP_ALIGN.CENTER)
